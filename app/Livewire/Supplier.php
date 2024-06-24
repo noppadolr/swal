@@ -14,7 +14,7 @@ class Supplier extends Component
     }
 
     public function store(){
-        $this->alert('success', 'Basic Alert');
+        $this->alert('success', 'Test Alert');
 
     }
 }
