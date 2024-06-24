@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Supplier;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,3 +19,6 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+Route::get('/supply',Supplier::class)->name('supplier');
